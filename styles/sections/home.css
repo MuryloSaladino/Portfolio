@@ -7,10 +7,12 @@
 .home__content{
     width: 95%;
     max-width: 1200px;
-    padding: 0 0 0 15%;
+    margin: auto;
+    padding: 5px;
 
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 40px;
 }
 .home__intro{
@@ -23,6 +25,7 @@
     height: 30px;
 
     border-radius: 50%;
+    object-fit: cover;
 }
 .home__buttons{
     display: flex;
@@ -35,7 +38,16 @@
     padding: 2px;
     border-radius: 50%;
 }
-
+.home__languages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.home__languages>li{
+    list-style: none;
+}
 
 @media(max-width: 500px){
     .home__content{
