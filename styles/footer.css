@@ -62,3 +62,13 @@ footer>div>div>img{
 .linkedin{
     background-color: var(--linkedin);
 }
+
+
+@media(max-width: 460px){
+    footer{
+        height: max-content;
+    }
+    footer>div{
+        gap: 120px;
+    }
+}
