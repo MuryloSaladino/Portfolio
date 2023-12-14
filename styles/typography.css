@@ -36,6 +36,11 @@ p{
 .grey3-text{
     color: var(--grey-3);
 }
+.outline-text{
+    background-color: var(--grey-4);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
 
 
 
