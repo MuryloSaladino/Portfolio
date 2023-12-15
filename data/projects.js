@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
     {
         name: "2048 C Project",
         language: "C",

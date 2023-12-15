@@ -42,3 +42,6 @@ document.getElementById('socials-button').addEventListener('click', () => {
     button.innerHTML = closedIcon
     options.style.height = "0"
 });
+document.getElementById('projects-button-2').addEventListener('click', () => {
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+});

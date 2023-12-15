@@ -1,6 +1,6 @@
 :root{
     --color-primary: #623CEA;
-    --color-primary-50: #311E75;
+    --color-primary-50: #17094a;
     --color-secondary: #50CF9A;
     --color-secondary-50: #E5F8F0;
     --color-tertiary: #FF577F;
@@ -22,4 +22,17 @@
 body{
     font-family: 'Inter', sans-serif;
     color: var(--grey-1);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-tertiary-50);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-50);
 }

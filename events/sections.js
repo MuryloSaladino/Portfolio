@@ -1,5 +1,3 @@
-import { projects } from "../data/projects";
-
 const renderProjects = (projects) => {
     
     const list = document.querySelector(".projects__list")
@@ -10,10 +8,21 @@ const renderProjects = (projects) => {
                 <h1>${projects.name}</h1>
                 <p class="grey3-text">Main Language: <span class="outline-text grey2-text">${projects.language}</span></p>
                 <p class="grey3-text">${projects.description}</p>
-                <a href="${projects.link}" target="_blank">
-                    <img src="./assets/github.png">
-                    <p>GitHub Code</p>
-                </a>
+                <div>
+                    <a href="${projects.link}" target="_blank">
+                        <img src="./assets/github.png">
+                        <p>GitHub Code</p>
+                    </a>
+                    ${
+                        projects.deploy ?
+                        `
+                            <a href="${projects.deploy}" target="_blank">
+                                <img src="./assets/share.svg">
+                                <p>Application</p>
+                            </a>
+                        ` : ""
+                    }
+                </div>
             </li>
         `)
     });

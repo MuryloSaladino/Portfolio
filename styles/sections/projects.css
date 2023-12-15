@@ -31,7 +31,7 @@
     flex-direction: column;
     gap: 15px;
 }
-.projects__list__card>a{
+.projects__list__card a{
     color: var(--grey-3);
     text-decoration: none;
 
@@ -41,11 +41,15 @@
 
     transition: 0.1s;
 }
-.projects__list__card>a:hover{
+.projects__list__card a:hover{
     color: var(--grey-1);
 }
 .projects__list__card>a>img{
     height: 100%;
+}
+.projects__list__card>div{
+    display: flex;
+    gap: 40px;
 }
 
 
