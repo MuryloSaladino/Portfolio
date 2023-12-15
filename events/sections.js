@@ -1,42 +1,16 @@
-const getProfileInfo = async () => {
-    const userData = await fetch("https://api.github.com/users/MuryloSaladino")
-    .then(res => {
-        if(!res.ok)
-            throw new Error("Error on request")
-        return res.json()
-    })
-    .catch(err => {
-        console.error(err.message)
-    })
-    const userRepos = await fetch("https://api.github.com/users/MuryloSaladino/repos")
-    .then(res => {
-        if(!res.ok)
-            throw new Error("Error on request")
-        return res.json()
-    })
-    .catch(err => {
-        console.error(err.message)
-    })
+import { projects } from "../data/projects";
 
-    return {...userData, repos: userRepos}
-}
-
-
-const profileInfo = await getProfileInfo()
-
-console.log(profileInfo)
-
-const renderRepos = (repos) => {
+const renderProjects = (projects) => {
     
     const list = document.querySelector(".projects__list")
 
-    repos.forEach(repo => {
+    projects.forEach(projects => {
         list.insertAdjacentHTML("beforeend", `
             <li class="projects__list__card">
-                <h1>${repo.name}</h1>
-                <p class="grey3-text">Main Language: <span class="outline-text grey2-text">${repo.language}</span></p>
-                <p class="grey3-text">${repo.description}</p>
-                <a href="${repo.svn_url}" target="_blank">
+                <h1>${projects.name}</h1>
+                <p class="grey3-text">Main Language: <span class="outline-text grey2-text">${projects.language}</span></p>
+                <p class="grey3-text">${projects.description}</p>
+                <a href="${projects.link}" target="_blank">
                     <img src="./assets/github.png">
                     <p>GitHub Code</p>
                 </a>
@@ -45,4 +19,4 @@ const renderRepos = (repos) => {
     });
 }
 
-renderRepos(profileInfo.repos)
+renderProjects(projects)
