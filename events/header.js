@@ -21,3 +21,24 @@ button.addEventListener("click", () => {
         options.style.height = "0"
     }
 })
+
+document.getElementById('home-button').addEventListener('click', () => {
+    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+    button.innerHTML = closedIcon
+    options.style.height = "0"
+});
+document.getElementById('contact-button').addEventListener('click', () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    button.innerHTML = closedIcon
+    options.style.height = "0"
+});
+document.getElementById('projects-button').addEventListener('click', () => {
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+    button.innerHTML = closedIcon
+    options.style.height = "0"
+});
+document.getElementById('socials-button').addEventListener('click', () => {
+    document.getElementById('socials').scrollIntoView({ behavior: 'smooth' });
+    button.innerHTML = closedIcon
+    options.style.height = "0"
+});

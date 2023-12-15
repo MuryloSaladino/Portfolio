@@ -4,11 +4,17 @@ header{
     position: fixed;
 
     background-color: var(--grey-5);    
-    padding: 15px;
     border-bottom: 2px solid var(--color-primary);
-    
+}
+header>div{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 15px 0;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }

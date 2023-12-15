@@ -1,0 +1,66 @@
+.contact{
+    width: 100%;
+
+    background-color: var(--grey-4);
+    padding: 100px 0;
+}
+.contact__content{
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 75px;
+}
+.contact__content>div{
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+}
+.contact__card{
+    width: 490px;
+    max-width: 90vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.contact__card__linkedin-icon{
+    width: 70px;
+    height: 70px;
+
+    background-color: var(--linkedin);
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__card__email-icon{
+    width: 70px;
+    height: 70px;
+
+    background-color: var(--instagram);
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__card__content{
+    width: 365px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
