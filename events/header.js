@@ -11,6 +11,7 @@ const openIcon = `
 const button = document.querySelector(".nav__icon")
 const options = document.querySelector(".nav__options")
 
+
 button.addEventListener("click", () => {
     
     if(button.innerHTML.includes("closed")){
@@ -22,26 +23,12 @@ button.addEventListener("click", () => {
     }
 })
 
-document.getElementById('home-button').addEventListener('click', () => {
-    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
-    button.innerHTML = closedIcon
-    options.style.height = "0"
-});
-document.getElementById('contact-button').addEventListener('click', () => {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    button.innerHTML = closedIcon
-    options.style.height = "0"
-});
-document.getElementById('projects-button').addEventListener('click', () => {
-    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
-    button.innerHTML = closedIcon
-    options.style.height = "0"
-});
-document.getElementById('socials-button').addEventListener('click', () => {
-    document.getElementById('socials').scrollIntoView({ behavior: 'smooth' });
-    button.innerHTML = closedIcon
-    options.style.height = "0"
-});
-document.getElementById('projects-button-2').addEventListener('click', () => {
-    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
-});
+options.querySelectorAll("h3").forEach(element => {
+    element.addEventListener('click', () => {
+        document.getElementById(element.innerText.toLowerCase()).scrollIntoView({ behavior: 'smooth' });
+        button.innerHTML = closedIcon
+        if(window.innerWidth <= 500) {
+            options.style.height = "0"
+        }
+    })
+})

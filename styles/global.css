@@ -25,7 +25,7 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    display: none;
 }
 ::-webkit-scrollbar-track {
     background: var(--color-tertiary-50);

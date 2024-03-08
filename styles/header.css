@@ -2,9 +2,16 @@ header{
     width: 100vw;
 
     position: fixed;
-
+    z-index: 999;
     background-color: var(--grey-5);    
-    border-bottom: 2px solid var(--color-primary);
+}
+#bar{
+    width: 0%;
+    padding: 0;
+    height: 3px;
+    position: absolute;
+
+    background: var(--color-primary);
 }
 header>div{
     width: 90%;

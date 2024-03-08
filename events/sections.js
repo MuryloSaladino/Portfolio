@@ -28,4 +28,10 @@ const renderProjects = (projects) => {
     });
 }
 
+
+document.querySelector('.home__languages').addEventListener('wheel', (event) => {
+    event.preventDefault() // prevent vertical scroll
+    document.querySelector('.home__languages').scrollLeft += event.deltaY / 2
+})
+
 renderProjects(projects)

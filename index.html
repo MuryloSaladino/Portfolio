@@ -16,9 +16,12 @@
     <link rel="stylesheet" href="./styles/sections/contact.css">
     <link rel="stylesheet" href="./styles/button.css">
     <link rel="stylesheet" href="./styles/footer.css">
+
     <script src="./data/projects.js"></script>
     <script src="./events/header.js" defer></script>
     <script src="./events/sections.js" type="module" defer></script>
+    <script src="./events/window.js" defer></script>
+
     <title>Murylo Saladino</title>
 </head>
 <body>
@@ -37,9 +40,10 @@
                 <h3 id="home-button">Home</h3>
                 <h3 id="projects-button">Projects</h3>
                 <h3 id="contact-button">Contact</h3>
-                <h3 id="socials-button">Social</h3>
+                <h3 id="socials-button">Socials</h3>
             </div>
         </div>
+        <i id="bar"></i>
     </header>
 
     <main>
@@ -47,7 +51,7 @@
             <div class="home__content">
                 <div class="home__intro">
                     <img src="./assets/romiudo.jpg" alt="profile">
-                    <span class="headline grey2-text">Hello, my name is Murylo! Currently a Captain from the Engineering Tech School at Bosch.</span>
+                    <span class="headline grey2-text">Hello, my name is Murylo! Currently an apprentice in the Engineering Tech School at Bosch.</span>
                 </div>
 
                 <h1>I <span class="primary-text">love</span> creating and <span class="primary-text">developing</span> projects</h1>
@@ -62,17 +66,26 @@
                     </a>
                 </div>
 
-                <ul class="home__languages">
-                    <li><img src="./assets/c.png" height="60px"></li>
-                    <li><img src="./assets/html.svg"></li>
-                    <li><img src="./assets/css.svg"></li>
-                    <li><img src="./assets/js.png"></li>
-                    <li><img src="./assets/python-64.png" height="60px"></li>
-                    <li><img src="./assets/download-removebg-preview.png" height="60px"></li>                   
-                    <li><img src="./assets/1_BNtMfCtElm678SLZL8tPrQ.png" height="60px"></li>
-                    <li><img src="./assets/react.svg"></li>                   
-                    <li><img src="./assets/node.svg"></li>
-                </ul>
+                <div class="home__languages__container">
+                    <h3>Technologies</h3>
+                    <ul class="home__languages">
+                        <li></li>
+                        <li><img src="./assets/tech_logos/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png"></li>
+                        <li><img src="./assets/tech_logos/2945099.webp"></li>
+                        <li><img src="./assets/tech_logos/C_Logo.png"></li>
+                        <li><img src="./assets/tech_logos/file-type-css-icon-1806x2048-r5fwjl3p.png"></li>
+                        <li><img src="./assets/tech_logos/Logo_C_sharp.svg.png"></li>
+                        <li><img src="./assets/tech_logos/React-icon.svg.png"></li>                    
+                        <li><img src="./assets/tech_logos/ISO_C++_Logo.svg.png"></li>
+                        <li><img src="./assets/tech_logos/Java-Logo.png"></li>
+                        <li><img src="./assets/tech_logos/JavaScript-logo.png"></li>
+                        <li><img src="./assets/tech_logos/node-js-icon-454x512-nztofx17.png"></li>
+                        <li><img src="./assets/tech_logos/arduino-logo-1.png"></li>
+                        <li></li>
+                    </ul>
+                    <div class="home__languages__gradient"></div>
+                    <div class="home__languages__gradient"></div>
+                </div>
             </div>
         </section>
 
