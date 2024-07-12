@@ -4,11 +4,14 @@ const NavMenu = () => {
 
 
     return(
-        <StyledResponsiveBox>
-            <StyledLink>About</StyledLink>
-            <StyledLink>Projects</StyledLink>
-            <StyledLink>Technologies</StyledLink>
-        </StyledResponsiveBox>
+        <>
+            <input id="headerMenuToggle" style={{ display: 'none' }} type="checkbox"/>
+            <StyledResponsiveBox>
+                <StyledLink>About</StyledLink>
+                <StyledLink>Projects</StyledLink>
+                <StyledLink>Technologies</StyledLink>
+            </StyledResponsiveBox>
+        </>
     )
 }
 
