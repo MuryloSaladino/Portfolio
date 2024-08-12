@@ -9,7 +9,7 @@ function Header() {
         <StyledAppBar color="primary">
             <Toolbar>
                 <Container maxWidth="xl">
-                    <Stack flexDirection="row" justifyContent="space-between">
+                    <Stack flexDirection="row" justifyContent="space-between" flexWrap="wrap">
                         <MuryloIcon/>
                         <NavMenu/>
                     </Stack>
