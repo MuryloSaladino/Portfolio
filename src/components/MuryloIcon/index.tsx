@@ -1,8 +1,8 @@
-import { Avatar, IconButton, Menu, MenuItem, Tooltip, Typography } from "@mui/material"
+import { Avatar, Menu, MenuItem, Tooltip, Typography } from "@mui/material"
 import { Fragment, useState } from "react"
 import githubSrc from "../../assets/img/github.png"
 import linkedinSrc from "../../assets/img/linkedin.png"
-import { StyledLink } from "./styles";
+import { StyledIconButton, StyledLink } from "./styles";
 
 interface IMuryloIconProps {
     width?: number | string;
@@ -21,12 +21,12 @@ const MuryloIcon = ({ width, heigth }:IMuryloIconProps) => {
     return(
         <Fragment>
             <Tooltip title="Murylo Saladino">
-                <IconButton onClick={(event) => setAnchorEl(event.currentTarget)}>
+                <StyledIconButton onClick={(event) => setAnchorEl(event.currentTarget)}>
                     <Avatar
                         src="https://media.licdn.com/dms/image/D4D03AQEawyk3Dl8laA/profile-displayphoto-shrink_800_800/0/1687554115125?e=1726099200&v=beta&t=L36AtbYTEFlQDskj7hjjBs3DkpiTxtvEF6KcO-KwCJ4"
                         sx={{ width: width || "50px", height: heigth || "50px" }}
                     />
-                </IconButton>
+                </StyledIconButton>
             </Tooltip>
             <Menu
                 anchorEl={anchorEl}

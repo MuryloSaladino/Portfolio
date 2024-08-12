@@ -6,7 +6,7 @@ import { StyledAppBar } from "./styles";
 function Header() {
 
     return ( 
-        <StyledAppBar>
+        <StyledAppBar color="primary">
             <Toolbar>
                 <Container maxWidth="xl">
                     <Stack flexDirection="row" justifyContent="space-between">
