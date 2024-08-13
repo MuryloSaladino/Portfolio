@@ -1,7 +1,11 @@
-import { IconButton, styled } from "@mui/material";
+import { IconButton, MenuItem, styled } from "@mui/material";
+
+export const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
+    backgroundColor: theme.palette.primary.dark
+}))
 
 export const StyledLink = styled('a')`
-    color: black;
+    color: white;
     text-decoration: none;
 
     display: flex;

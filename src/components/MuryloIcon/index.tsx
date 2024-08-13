@@ -1,8 +1,8 @@
-import { Avatar, Menu, MenuItem, Tooltip, Typography } from "@mui/material"
+import { Avatar, Menu, Tooltip, Typography } from "@mui/material"
 import { Fragment, useState } from "react"
 import githubSrc from "../../assets/img/github.png"
 import linkedinSrc from "../../assets/img/linkedin.png"
-import { StyledIconButton, StyledLink } from "./styles";
+import { StyledIconButton, StyledLink, StyledMenuItem } from "./styles";
 
 interface IMuryloIconProps {
     width?: number | string;
@@ -32,20 +32,21 @@ const MuryloIcon = ({ width, heigth }:IMuryloIconProps) => {
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
-                >
-                <MenuItem onClick={handleClose}>
+                MenuListProps={{ sx: { bgcolor: "primary.dark" } }}
+            >
+                <StyledMenuItem onClick={handleClose}>
                     <StyledLink target="_blank" href="https://www.linkedin.com/in/murylo-saladino/">
                         <Avatar src={linkedinSrc} sx={{ width: "30px", height: "30px" }}/>
                         <Typography variant="h6">LinkedIn</Typography>
                     </StyledLink>
-                </MenuItem>
+                </StyledMenuItem>
 
-                <MenuItem onClick={handleClose}>
+                <StyledMenuItem onClick={handleClose}>
                     <StyledLink target="_blank" href="https://github.com/MuryloSaladino">
                         <Avatar src={githubSrc} sx={{ width: "30px", height: "30px" }}/>
                         <Typography variant="h6">Github</Typography>
                     </StyledLink>
-                </MenuItem>
+                </StyledMenuItem>
             </Menu>
         </Fragment>
     )
