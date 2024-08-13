@@ -1,5 +1,5 @@
 import { Container, Stack, Typography } from "@mui/material"
-import { StyledSection } from "./styles"
+import { PurpleText, StyledSection } from "./styles"
 
 const AboutMe = () => {
 
@@ -14,8 +14,9 @@ const AboutMe = () => {
                         I've studied and practiced a lot in the last years to develop myself as
                         a web developer, and ended up learning a lot about other areas, especially
                         IoT. It's hard to decide my favorite technology, but I have a special place 
-                        in my heart for the ones that I learned first: React in Frontend, SpringBoot 
-                        in backend and Arduino with C++ in IoT. 
+                        in my heart for the ones that I learned first:<PurpleText> React </PurpleText> 
+                        in Frontend,<PurpleText> SpringBoot </PurpleText>in backend and 
+                        <PurpleText> Arduino with C++ </PurpleText>in IoT. 
                     </Typography>
                 </Stack>
             </Container>
