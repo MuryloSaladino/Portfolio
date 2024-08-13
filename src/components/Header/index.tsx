@@ -8,7 +8,11 @@ function Header() {
         <StyledAppBar>
             <Toolbar sx={{ position: "relative" }}>
                 <Container maxWidth="xl">
-                    <Stack flexDirection="row" justifyContent="space-between" flexWrap="wrap">
+                    <Stack
+                        flexDirection="row"
+                        justifyContent="space-between"
+                        flexWrap="wrap"
+                    >
                         <MuryloIcon/>
                         <NavMenu/>
                     </Stack>
