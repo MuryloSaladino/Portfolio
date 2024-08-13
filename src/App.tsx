@@ -1,12 +1,14 @@
-import { Fragment } from "react/jsx-runtime"
 import Header from "./components/Header"
+import Home from "./sections/Home"
+import { Stack } from "@mui/material"
 
 function App() {
 
     return(
-        <Fragment>
+        <Stack sx={{ bgcolor: 'background.default' }}>
             <Header/>
-        </Fragment>
+            <Home/>
+        </Stack>
     )
 }
 

@@ -4,7 +4,7 @@ import NavMenu from "../NavMenu";
 import { StyledAppBar } from "./styles";
 
 function Header() {
-    return ( 
+    return (
         <StyledAppBar>
             <Toolbar sx={{ position: "relative" }}>
                 <Container maxWidth="xl">
