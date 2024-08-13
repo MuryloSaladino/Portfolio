@@ -23,7 +23,6 @@ export const StyledLinkList = styled('div')<TStyledLinkListProps>(({ open, theme
     margin-left: auto;
     gap: 20px;
     transition: 0.3s;
-    border-bottom: 2px solid ${theme.palette.primary.main};
 
     @media(max-width: 500px) {
         position: fixed;
@@ -33,6 +32,7 @@ export const StyledLinkList = styled('div')<TStyledLinkListProps>(({ open, theme
         width: 100vw;
         height: 40vh;
         background-color: ${theme.palette.background.default};
+        border-bottom: 2px solid ${theme.palette.primary.main};
         padding: 20px;
         transform: translateY(${!open && "-300px"});
 
