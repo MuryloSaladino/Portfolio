@@ -16,6 +16,14 @@ const theme = createTheme({
             default: "#181824",
             paper: "#1A1A29"
         }
+    },
+    typography: {
+        body1: {
+            fontSize: "1.2rem"
+        },
+        h2: {
+            fontSize: "4rem"
+        }
     }
 })
 
