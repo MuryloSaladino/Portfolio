@@ -4,7 +4,7 @@ const AboutMe = () => {
 
 
     return(
-        <Box>
+        <Box sx={{ minHeight: "100vh" }}>
 
         </Box>
     )

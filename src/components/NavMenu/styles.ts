@@ -23,19 +23,22 @@ export const StyledLinkList = styled('div')<TStyledLinkListProps>(({ open, theme
     margin-left: auto;
     gap: 20px;
     transition: 0.3s;
+    border-bottom: 2px solid ${theme.palette.primary.main};
 
     @media(max-width: 500px) {
         position: fixed;
-        z-index: -90;
-        top: 80px;
+        z-index: -10;
+        top: 0;
         right: 0;
         width: 100vw;
+        height: 40vh;
         background-color: ${theme.palette.background.default};
         padding: 20px;
         transform: translateY(${!open && "-300px"});
 
         flex-direction: column;
         align-items: flex-end;
+        justify-content: flex-end;
     }
 `)
 
