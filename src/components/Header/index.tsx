@@ -4,19 +4,18 @@ import NavMenu from "../NavMenu";
 import { StyledAppBar } from "./styles";
 
 function Header() {
-
     return ( 
-        <StyledAppBar color="primary">
-            <Toolbar>
+        <StyledAppBar>
+            <Toolbar sx={{ position: "relative" }}>
                 <Container maxWidth="xl">
                     <Stack flexDirection="row" justifyContent="space-between" flexWrap="wrap">
                         <MuryloIcon/>
                         <NavMenu/>
                     </Stack>
                 </Container>
-            </Toolbar>        
+            </Toolbar>
         </StyledAppBar>
-    );
+    )
 }
 
 export default Header;

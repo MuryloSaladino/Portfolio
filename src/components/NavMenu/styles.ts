@@ -16,22 +16,26 @@ export const StyledIconButton = styled(IconButton)`
     }
 `
 
-export const StyledLinkList = styled('div')<TStyledLinkListProps>(({ open }) => `
+export const StyledLinkList = styled('div')<TStyledLinkListProps>(({ open, theme }) => `
 
     display: flex;
     align-items: center;
     margin-left: auto;
     gap: 20px;
     transition: 0.3s;
-    overflow: hidden;
 
     @media(max-width: 500px) {
-        height: ${open ? 'max-content' : 0};
-        width: "100%";
+        position: fixed;
+        z-index: -90;
+        top: 80px;
+        right: 0;
+        width: 100vw;
+        background-color: ${theme.palette.background.default};
+        padding: 20px;
+        transform: translateY(${!open && "-300px"});
 
         flex-direction: column;
         align-items: flex-end;
-        padding: ${open ? '20px' : '0'}; 
     }
 `)
 
