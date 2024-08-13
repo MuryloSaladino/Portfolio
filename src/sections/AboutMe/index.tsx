@@ -1,12 +1,16 @@
-import { Box } from "@mui/material"
+import { Container, Typography } from "@mui/material"
+import { StyledSection } from "./styles"
 
 const AboutMe = () => {
 
 
     return(
-        <Box sx={{ minHeight: "100vh" }}>
+        <StyledSection sx={{ minHeight: "100vh" }}>
+            <Container>
+                <Typography variant="h4" color="primary.main">About Me</Typography>
 
-        </Box>
+            </Container>
+        </StyledSection>
     )
 }
 

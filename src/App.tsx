@@ -1,16 +1,18 @@
 import Header from "./components/Header"
 import AboutMe from "./sections/AboutMe"
 import Home from "./sections/Home"
-import { Stack } from "@mui/material"
+import { Box, Stack } from "@mui/material"
 
 function App() {
 
     return(
-        <Stack sx={{ bgcolor: 'background.default' }}>
+        <Box sx={{ bgcolor: 'background.default' }}>
             <Header/>
-            <Home/>
-            <AboutMe/>
-        </Stack>
+            <Stack gap={10}>
+                <Home/>
+                <AboutMe/>
+            </Stack>
+        </Box>
     )
 }
 
