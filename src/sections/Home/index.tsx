@@ -1,6 +1,7 @@
 import { Container, Grid } from "@mui/material"
 import { StyledSection } from "./styles"
 import HomeHeader from "./components/HomeHeader"
+import TechList from "./components/TechList"
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
                         
                     </Grid>
                 </Grid>
+                <TechList/>
             </Container>
         </StyledSection>
     )
