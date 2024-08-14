@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react"
-import { StyledTechList } from "../styles"
+import { useEffect, useRef, useState } from "react"
+import { StyledTechIcon, StyledTechList } from "../styles"
+import { Tooltip } from "@mui/material"
+import Marquee from "react-fast-marquee"
 
 const TechList = () => {
 
     const [icons, setIcons] = useState<string[]>([])
+    const ref = useRef<HTMLElement | null>(null)
 
     useEffect(() => {
         (async () => {
@@ -15,11 +18,15 @@ const TechList = () => {
     }, [])
 
     return(
-        <StyledTechList component="ul">
-            {icons.map((src, index) => (
-                <img key={index} src={src}/>
-            ))}
-        </StyledTechList>
+        <Marquee pauseOnHover gradient gradientColor="#1A1A29" gradientWidth={50}>
+            <StyledTechList component="ul" ref={ref}>
+                {icons.map((src, index) => (
+                    <Tooltip key={index} title={src.substring(21, src.indexOf("."))}>
+                        <StyledTechIcon src={src}/>
+                    </Tooltip>
+                ))}
+            </StyledTechList>
+        </Marquee>
     )
 }
 
