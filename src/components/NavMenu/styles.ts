@@ -45,6 +45,7 @@ export const StyledLinkList = styled('div')<TStyledLinkListProps>(({ open, theme
 export const StyledLink = styled('a')`
     font-size: 1.25rem;
     color: white;
+    text-decoration: none;
 
     position: relative;
     
