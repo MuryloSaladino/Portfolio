@@ -1,9 +1,9 @@
-import { Grid } from "@mui/material"
-import Skill from "./Skill"
+import { Grid, Typography } from "@mui/material"
 import FrontIcon from "../../../assets/img/skills/front.png"
 import AutomationIcon from "../../../assets/img/skills/automation.png"
 import BackIcon from "../../../assets/img/skills/back.png"
 import IotIcon from "../../../assets/img/skills/iot.png"
+import { SkillBox, SkillBoxImage } from "../styles"
 
 const SkillList = () => {
     return(
@@ -25,6 +25,24 @@ const SkillList = () => {
                 children={<Skill description="IoT" iconPath={IotIcon} />}
             />
         </Grid>
+    )
+}
+
+type TSkillProps = {
+    description: string;
+    iconPath: string;
+}
+const Skill = ({ description, iconPath }:TSkillProps) => {
+
+    return(
+        <SkillBox>
+            <SkillBoxImage src={iconPath}/>
+            <Typography 
+                variant="h5" 
+                textAlign="center"
+                fontWeight={500} 
+            >{ description.toUpperCase() }</Typography>
+        </SkillBox>
     )
 }
 
