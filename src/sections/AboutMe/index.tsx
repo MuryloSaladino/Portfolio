@@ -7,7 +7,7 @@ const AboutMe = () => {
 
 
     return(
-        <StyledSection>
+        <StyledSection id="about" component="section">
             <Container>
                 <Stack gap={3}>
                     <Typography variant="h4" color="primary.main" fontWeight={600}>About Me</Typography>

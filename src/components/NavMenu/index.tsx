@@ -12,9 +12,10 @@ const NavMenu = () => {
                 <MenuIcon fontSize="large" color="info"/>
             </StyledIconButton>
             <StyledLinkList open={open}>
-                <StyledLink>About</StyledLink>
-                <StyledLink>Projects</StyledLink>
-                <StyledLink>Technologies</StyledLink>
+                <StyledLink href="home">Home</StyledLink>
+                <StyledLink href="about">About</StyledLink>
+                <StyledLink href="projects">Projects</StyledLink>
+                <StyledLink href="technologies">Technologies</StyledLink>
             </StyledLinkList>
         </>
     )
