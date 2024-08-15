@@ -9,19 +9,19 @@ const SkillList = () => {
     return(
         <Grid container spacing={3}>
             <Grid 
-                item xs={12} sm={6} md={4} lg={3} xl={3}
+                item xs={6} sm={3} md={3} lg={3} xl={3}
                 children={<Skill description="Frontend" iconPath={FrontIcon} />}
             />
             <Grid 
-                item xs={12} sm={6} md={4} lg={3} xl={3}
+                item xs={6} sm={3} md={3} lg={3} xl={3}
                 children={<Skill description="Backend" iconPath={BackIcon} />}
             />
             <Grid 
-                item xs={12} sm={6} md={4} lg={3} xl={3}
-                children={<Skill description="Tasks Automation" iconPath={AutomationIcon} />}
+                item xs={6} sm={3} md={3} lg={3} xl={3}
+                children={<Skill description="Automation" iconPath={AutomationIcon} />}
             />
             <Grid 
-                item xs={12} sm={6} md={4} lg={3} xl={3}
+                item xs={6} sm={3} md={3} lg={3} xl={3}
                 children={<Skill description="IoT" iconPath={IotIcon} />}
             />
         </Grid>
@@ -33,12 +33,11 @@ type TSkillProps = {
     iconPath: string;
 }
 const Skill = ({ description, iconPath }:TSkillProps) => {
-
     return(
         <SkillBox>
             <SkillBoxImage src={iconPath}/>
             <Typography 
-                variant="h5" 
+                variant="h6" 
                 textAlign="center"
                 fontWeight={500} 
             >{ description.toUpperCase() }</Typography>
