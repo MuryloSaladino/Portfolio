@@ -1,7 +1,10 @@
 import { IconButton, MenuItem, styled } from "@mui/material";
 
 export const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
-    backgroundColor: theme.palette.primary.dark
+    transition: "0.2s",
+    ':hover': {
+        backgroundColor: theme.palette.primary.main
+    }
 }))
 
 export const StyledLink = styled("a")(() => ({
