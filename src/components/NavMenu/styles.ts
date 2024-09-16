@@ -1,70 +1,66 @@
-import { IconButton, styled } from "@mui/material";
+import { Box, IconButton, styled } from "@mui/material";
 
 type TStyledLinkListProps = {
     open: boolean;
 }
 
-export const StyledIconButton = styled(IconButton)`
+export const StyledIconButton = styled(IconButton)(({ theme }) => ({
+    display: "none",
     
-    display: none;
-    
-    @media(max-width: 500px) {
-        display: block;
-        position: fixed;
-        top: 15px;
-        right: 15px;
+    [theme.breakpoints.down("sm")]: {
+        display: "block",
+        position: "fixed",
+        top: 15,
+        right: 15,
     }
-`
+}))
 
-export const StyledLinkList = styled('div')<TStyledLinkListProps>(({ open, theme }) => `
+export const StyledLinkList = styled(Box)<TStyledLinkListProps>(({ theme, open }) => ({
+    display: "flex",
+    alignItems: "center",
+    marginLeft: 20,
+    gap: 20,
+    transition: "0.5s",
 
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    gap: 20px;
-    transition: 0.3s;
+    [theme.breakpoints.down("sm")]: {
+        position: "fixed",
+        zIndex: -10,
+        top: 0,
+        right: 0,
+        width: "100vw",
+        height: "40vh",
+        backgroundColor: theme.palette.background.default,
+        borderBottom: `2px solid ${theme.palette.primary.main}`,
+        padding: 20,
+        transform: `translateY(${!open && "-500px"})`,
 
-    @media(max-width: 500px) {
-        position: fixed;
-        z-index: -10;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        height: 40vh;
-        background-color: ${theme.palette.background.default};
-        border-bottom: 2px solid ${theme.palette.primary.main};
-        padding: 20px;
-        transform: translateY(${!open && "-300px"});
-
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
+        flexDirection: "column",
+        alignItems: "flex-end",
+        justifyContent: "flex-end",
     }
-`)
+}))
 
-export const StyledLink = styled('a')`
-    font-size: 1.25rem;
-    color: white;
-    text-decoration: none;
+export const StyledLink = styled("a")(() => ({
+    fontSize: "1.25rem",
+    color: "white",
+    textDecoration: "none",
+    position: "relative",
 
-    position: relative;
-    
-    &::after {   
-        content: '';
-        position: absolute;
-        transition: 0.3s;
+    '::after': {
+        content: "''",
+        position: "absolute",
+        transition: "0.3s",
 
-        background-color: white;
-        width: 0;
-        height: 2px;
+        backgroundColor: "white",
+        width: 0,
+        height: "2px",
         
-        top: 110%;
-        left: 0;
-        right: 0;
-        margin: auto;
+        top: "110%",
+        left: 0,
+        right: 0,
+        margin: "auto",
+    },
+    ':hover::after': {
+        width: "100%",
     }
-
-    &:hover::after {
-        width: 100%;
-    }
-`
+}))
