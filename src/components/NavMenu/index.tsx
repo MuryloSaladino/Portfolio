@@ -1,6 +1,8 @@
-import { useState } from "react";
 import { StyledIconButton, StyledLink, StyledLinkList } from "./styles"
 import MenuIcon from '@mui/icons-material/Menu';
+
+import { useState } from "react";
+
 
 const NavMenu = () => {
 

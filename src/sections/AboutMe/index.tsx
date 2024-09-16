@@ -4,8 +4,6 @@ import AboutParagraph from "./components/AboutParagraph"
 import SkillList from "./components/SkillList"
 
 const AboutMe = () => {
-
-
     return(
         <StyledSection id="about" component="section">
             <Container>

@@ -21,6 +21,7 @@ export const SkillBox = styled(Box)(({ theme }) => ({
     alignItems: "center",
     gap: 25
 }))
+
 export const SkillBoxImage = styled("img")(() => ({
     width: "50%",
     maxWidth: 200

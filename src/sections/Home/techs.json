@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Arduino Framework",
+        "path": "/img/tech/Arduino.svg"
+    },
+    {
+        "name": "Bootstrap",
+        "path": "/img/tech/bootstrap4.svg"
+    },
+    {
+        "name": "C++",
+        "path": "/img/tech/c++.svg"
+    },
+    {
+        "name": "C#",
+        "path": "/img/tech/csharp.svg"
+    },
+    {
+        "name": "CSS3",
+        "path": "/img/tech/css3.svg"
+    },
+    {
+        "name": "Django",
+        "path": "/img/tech/django.svg"
+    },
+    {
+        "name": "Arduino Framework",
+        "path": "/img/tech/Arduino.svg"
+    },
+    {
+        "name": "Docker",
+        "path": "/img/tech/docker.svg"
+    },
+    {
+        "name": "Figma",
+        "path": "/img/tech/figma.svg"
+    },
+    {
+        "name": "Google Firebase",
+        "path": "/img/tech/firebase.svg"
+    },
+    {
+        "name": "Git / Github",
+        "path": "/img/tech/git.svg"
+    },
+    {
+        "name": "HTML5",
+        "path": "/img/tech/html5.svg"
+    },
+    {
+        "name": "Insomnia",
+        "path": "/img/tech/insomnia.svg"
+    },
+    {
+        "name": "Java",
+        "path": "/img/tech/java.svg"
+    },
+    {
+        "name": "JavaScript",
+        "path": "/img/tech/JavaScript.svg"
+    },
+    {
+        "name": "Jest",
+        "path": "/img/tech/jest.svg"
+    },
+    {
+        "name": "Material UI",
+        "path": "/img/tech/materialui.svg"
+    },
+    {
+        "name": "MongoDB",
+        "path": "/img/tech/mongodb.svg"
+    },
+    {
+        "name": "MySQL",
+        "path": "/img/tech/mysql.svg"
+    },
+    {
+        "name": "Node",
+        "path": "/img/tech/nodejs.svg"
+    },
+    {
+        "name": "PostgreSQL",
+        "path": "/img/tech/PostgresSQL.svg"
+    },
+    {
+        "name": "Windows PowerShell",
+        "path": "/img/tech/powershell.svg"
+    },
+    {
+        "name": "Python",
+        "path": "/img/tech/python.svg"
+    },
+    {
+        "name": "React",
+        "path": "/img/tech/reactjs.svg"
+    },
+    {
+        "name": "React Router Dom",
+        "path": "/img/tech/reactrouter.svg"
+    },
+    {
+        "name": "SpringBoot",
+        "path": "/img/tech/SpringBoot.svg"
+    },
+    {
+        "name": "TailWind CSS",
+        "path": "/img/tech/tailwindcss.svg"
+    },
+    {
+        "name": "Typescript",
+        "path": "/img/tech/typescript.svg"
+    },
+    {
+        "name": "Vite",
+        "path": "/img/tech/vitejs.svg"
+    }
+]
